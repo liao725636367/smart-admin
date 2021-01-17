@@ -5,7 +5,7 @@
 ## 1.windows下的服务部署 ##
 
 windows使用 server.bat 进行服务管理
-## 2.linux下的服务部
+## 2.linux下的服务部署
 linux下使用 宝塔 supervisor 进行服务管理 
 软件商店安装 Supervisor管理器 1.1 并添加 程序到守护程序 以www身份运行
 ### supervisord开机自启动
