@@ -1,0 +1,21 @@
+{{range $i,$v:=.menus}}
+    {{if gt (map_get $v "level")  1}}
+        <li class="active">
+            <a href="{{ map_get (sliceFirst  (map_get $v "sub")) "path"}}"><i class="{{map_get $v "icon"}}"></i> <span class="nav-label">{{map_get $v "cn_name"}}</span> <span class="fa arrow"></span></a>
+            <ul class="nav nav-second-level">
+                <li class="active"><a href="index.html">主页示例 v.1</a></li>
+                <li><a href="dashboard_2.html">主页示例 v.2</a></li>
+                <li><a href="dashboard_3.html">主页示例 v.3</a></li>
+                <li><a href="dashboard_4_1.html">主页示例 v.4</a></li>
+                <li><a href="dashboard_5.html">主页示例 v.5 </a></li>
+            </ul>
+        </li>
+    {{else}}
+        <li>
+            <a href="layouts.html"><i class="fa fa-diamond"></i> <span class="nav-label">Layouts</span></a>
+        </li>
+    {{end}}
+
+{{end}}
+
+

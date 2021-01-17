@@ -1,0 +1,21 @@
+appname = beegoTest
+httpport = 8080
+runmode = prod
+
+
+sessionon = true
+sessionprovider = file
+sessionproviderconfig = ./tmp
+sessiongcmaxlifetime = 31536000
+sessioncookielifetime = 31536000
+
+templateleft = {{
+templateright = }}
+
+[mysql]
+user = "root"
+pwd = "root"
+host = "127.0.0.1"
+port = 3306
+dbname   = "goadmin"
+sql_log = false

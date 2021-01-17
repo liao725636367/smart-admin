@@ -1,0 +1,9 @@
+/.idea
+/conf/app.conf
+/smartapp.exe
+/smartapp.exe~
+*.zip
+*.tar.gz
+*.log
+*.tmp
+/routers/comments*.go

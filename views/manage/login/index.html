@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{{.title}} | 登录</title>
+
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <link href="/static/css/animate.css" rel="stylesheet">
+    <link href="/static/css/style.css" rel="stylesheet">
+    <!-- Toastr style -->
+    <link href="/static/css/plugins/toastr/toastr.min.css" rel="stylesheet">
+
+</head>
+
+<body class="gray-bg">
+
+<div class="middle-box text-center loginscreen animated fadeInDown">
+    <div>
+        <div>
+
+{{/*            <h1 class="logo-name">智能小程序</h1>*/}}
+
+        </div>
+        <h3>欢迎{{ .title }}</h3>
+        <p>专业小程序解决方案</p>
+        <form class="m-t" role="form" action="" method="post">
+            <div class="form-group">
+                <input type="text"  name="username" class="form-control" placeholder="用户名" required="">
+            </div>
+            <div class="form-group">
+                <input type="password" name="password" class="form-control" placeholder="密码" required="">
+            </div>
+            <button type="submit" class="btn btn-primary block full-width m-b" data-loading-text="登录中..." >登录</button>
+
+            <a href="#"><small>忘记密码?</small></a>
+            <p class="text-muted text-center"><small>还没有账号?</small></p>
+            <a class="btn btn-sm btn-white btn-block" href="register.html">创建一个帐户</a>
+        </form>
+        <p class="m-t"> <small>Copyright</strong> {{.title}} &copy; 2017-2018</small> </p>
+    </div>
+</div>
+
+<!-- Mainly scripts -->
+<script src="/static/js/jquery-3.1.1.min.js"></script>
+<script src="https://cdn.staticfile.org/jquery.form/4.2.2/jquery.form.min.js"></script>
+<script src="/static/js/popper.min.js"></script>
+<script src="/static/js/bootstrap.js"></script>
+<script src="/static/js/common/ajax-handler.js"></script>
+{{/*弹窗插件*/}}
+<script src="/static/js/plugins/toastr/toastr.min.js"></script>
+<script>
+    // $(function () {
+    //     function stopDef(e) {
+    //         if (e && e.preventDefault) e.preventDefault();
+    //         else window.event.returnValue = false;
+    //         return false;
+    //     }
+    //
+    //     $("form").ajaxForm(function (e) {
+    //         console.log("返回信息",e)
+    //         eval
+    //     })
+    // })
+</script>
+</body>
+
+</html>
